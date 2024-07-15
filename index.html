@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <script>
+      //   let person = {
+      //     name: "Raj",
+      //     ShowName: function () {
+      //       document.writeln(person.name);
+      //     },
+      //   };
+      //   person.ShowName();
+
+      //   function person(name) {
+      //     this.name = name;
+      //     this.showName = function () {
+      //       document.writeln(this.name);
+      //     };
+      //   }
+
+      //   let person1 = new person("Emily");
+      //   person1.showName();
+
+      function person(name) {
+        this.name = name;
+      }
+      person.prototype.showName = function () {
+        document.writeln(this.name);
+      };
+      let person1 = new person("Emily");
+      person1.showName();
+    </script>
+  </body>
+</html>
